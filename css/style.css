@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    margin-top: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+header i {
+    font-size: 30px;
+}
+
+.buscar {
+    margin-left: 300px;
+    min-height: 39px;
+    background-color: #f4f4f4;
+    padding: 0 25px 0 45px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 900px;
+}
+
+.fa-user {
+    padding-left: 200px;
+}
+
+.fa-cart-shopping{
+    padding-left: 30px;
+}
+
+.fa-bars{
+    padding-left: 30px ;
+}
+
+/*-------------------- MENU DE LA PAGINA ----------------------*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+nav .menu-list{
+    list-style: none;
+    display: flex;
+    color: black;
+}
+
+nav .menu-list a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 190px;
+}
+
+nav .menu-list .submenu{
+    list-style: none;
+}
+
+nav .menu-list li .submenu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+nav .menu-list li .submenu{
+    display: none;
+}
+
+nav .menu-list li:hover ul{
+    display: block;
+}
+
+
+nav .menu-list li .submenu li{
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav .menu-list li .submenu li a{
+    font-size: 17px;
+    font-weight: 100;
+}
+
+/* ----------------PORTADA------------- */
+
+.portada {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fotos{
+    width: 100%;
+    padding: 3px;
+    height: 700px;
+}
+
+/* ----------------FIN PORTADA------------- */
+
+
+/* ----------------FOOTER------------- */
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1 ul{
+    list-style: none;
+}
+
+.section1 ul li{
+    margin-bottom: 20px;
+}
+
+.section2 a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.section2 a:hover{
+    color: black;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 a {
+    margin-top: 10px;
+    color: black;
+    font-weight: 600px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.section3 a:hover{
+    color: black;
+}
+
+.section3 a .fab {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.subtitulo{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #545454;
+    padding-bottom: 10px;
+}
+
+.section2 .subtitulo a{
+    margin-bottom: 20px;
+}
+
+.section2 .contacto{
+    margin-bottom: 100px;
+}
+
+/* ---------------- FIN FOOTER------------- */
+
+
+
+/* ----------------COPYRIGHT------------- */
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+  
+.copyright p {
+    margin-top: 10px;
+    color: black;
+}
+  
+.copyright hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+/* ----------------FIN COPYRIGHT------------- */
+
+
+/* ----------------PRODUCTOS------------- */
+
+#tittle{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.titulo_seccion{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+}
+
+#contenedor{
+    display:grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-right: 100px;
+
+}
+
+
+.productos{
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen_productos{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.titulo_productos{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: repeat(6, 0fr);
+    justify-content: center;
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.descripcion_productos{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----------------FIN DE PRODUCTOS------------- */
+
+
+
+/* ----------------CARRITO------------- */
+
+#botonCarrito {
+    border: none;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+
+}
+
+#botonCarrito:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#botonCarrito:focus {
+    outline: none;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: fixed;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    transition: all .5s;
+}
+
+.none{
+    display:none;
+}
+
+.block{
+    display: block;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+.modal-carrito #cerrarCarrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 10px;
+    
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+#precioProducto {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.productoEnCarrito {
+    border-left: 5px solid black;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+#img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#contadorCarrito{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
