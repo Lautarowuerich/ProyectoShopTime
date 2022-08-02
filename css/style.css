@@ -96,9 +96,10 @@ nav .menu-list li .submenu li a{
 /* ----------------PORTADA------------- */
 
 .portada {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: center;
+    height: 700px;
 
 }
 
@@ -107,6 +108,7 @@ nav .menu-list li .submenu li a{
     padding: 3px;
     height: 700px;
 }
+
 
 /* ----------------FIN PORTADA------------- */
 
